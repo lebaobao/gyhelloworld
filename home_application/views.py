@@ -22,3 +22,9 @@ def contactus(request):
     联系我们
     """
     return render_mako_context(request, '/home_application/contact.html')
+
+def helloworld(request):
+    """
+    helloworld
+    """
+    return render_mako_context(request,'home_application/helloworld.html')
