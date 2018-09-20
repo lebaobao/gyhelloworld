@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from django.conf.urls import patterns
+from django.conf.urls import patterns, include
 
 urlpatterns = patterns('home_application.views',
     (r'^$', 'home'),
