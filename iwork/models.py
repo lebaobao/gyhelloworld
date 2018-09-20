@@ -19,4 +19,3 @@ class WorkRecord(models.Model):
         verbose_name = u"会议记录"
         verbose_name_plural = u"会议记录"
 
-

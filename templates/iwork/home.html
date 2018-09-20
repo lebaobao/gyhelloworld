@@ -107,34 +107,15 @@
                             </tr>
                         </thead>
                         <tbody>
+                           % for record in records:
                             <tr>
-                                <td style="width: 100px;">2</td>
-                                <td style="width: 20%;">版本更新</td>
-                                <td style="width: 20%;">完成</td>
-                                <td style="width: 20%;">管理员</td>
-                                <td>2015-09-20</td>
+                                <td style="width: 100px;">${record.id}</td>
+                                <td style="width: 20%;">${record.theme}</td>
+                                <td style="width: 20%;">${record.content}</td>
+                                <td style="width: 20%;">${record.operstor}</td>
+                                <td>${record.record_time.strftime("%Y-%m-%d %H:%M:%S")}</td>
                             </tr>
-                            <tr>
-                                <td style="width: 100px;">2</td>
-                                <td style="width: 20%;">数据备份</td>
-                                <td style="width: 20%;">完成</td>
-                                <td style="width: 20%;">管理员</td>
-                                <td>2015-09-20</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100px;">3</td>
-                                <td style="width: 20%;">定时任务</td>
-                                <td style="width: 20%;">完成</td>
-                                <td style="width: 20%;">管理员</td>
-                                <td>2015-09-20</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 100px;">4</td>
-                                <td style="width: 20%;">修复bug</td>
-                                <td style="width: 20%;">完成</td>
-                                <td style="width: 20%;">管理员</td>
-                                <td>2015-09-20</td>
-                            </tr>
+                            % endfor
                         </tbody>
                     </table>
                     <!-- 设置面板Start -->
